@@ -2,21 +2,21 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## How to Play
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. Select a category and a point value.
+2. Read the question and think carefully.
+3. Formulate your response in the form of a question.
+4. Submit your answer and see if you're correct.
+5. Keep playing and aiming for a high score!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Contributing
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Contributions are welcome! If you'd like to improve the game or add new features, please fork the repository and create a pull request. We appreciate your contributions.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -34,5 +34,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
