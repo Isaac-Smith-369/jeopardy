@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>QB</title>
+	<title>Pontus</title>
 </svelte:head>
 
 <div class="flex-col bg-gray-300 items-center flex justify-center w-full h-screen">
