@@ -19,7 +19,7 @@
 				{/each}
 			</Category>
 		{:else}
-			<div>No Questions Available</div>
+			<div class="font-extrabold text-gray-900 text-3xl">No Questions Available</div>
 		{/each}
 	</section>
 {/if}

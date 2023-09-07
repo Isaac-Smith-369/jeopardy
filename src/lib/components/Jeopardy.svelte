@@ -23,7 +23,7 @@
 	});
 </script>
 
-{#if $gameState.round}
+{#if $gameState.round?.questions}
 	<AnswerCard />
 	<GameBoard on:revealQuestion={(e) => gameState.revealQuestion(e.detail)} />
 	<ScoreBoard />
