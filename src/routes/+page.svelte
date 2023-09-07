@@ -18,9 +18,9 @@
 </script>
 
 <svelte:head>
-	<title>Jeopardy!</title>
+	<title>QB</title>
 </svelte:head>
 
-<div class="flex-col bg-gray-950 items-center flex justify-center w-full h-screen">
+<div class="flex-col bg-gray-300 items-center flex justify-center w-full h-screen">
 	<svelte:component this={currentState} />
 </div>

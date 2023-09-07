@@ -57,7 +57,8 @@ const _gameState = () => {
 
             // Game over if no more questions
             if (state.round?.question_count === 0) {
-                state.currentState = "GameOver"
+                // state.playerScore = 0;
+                state.currentState = "GameOver";
             }
 
             // Reset

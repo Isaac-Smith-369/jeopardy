@@ -13,7 +13,7 @@
 	}}
 	class="w-full flex flex-col md:flex-row lg:flex-row justify-center items-center gap-2 px-3 mb-2"
 >
-	<span class="text-lg font-semibold">What is</span>
+	<!-- <span class="text-lg font-semibold">What is</span> -->
 	<input
 		name="answer"
 		type="text"
@@ -21,7 +21,7 @@
 		use:focusOnInit
 		autocomplete="off"
 		placeholder="Answer here"
-		class="h-[50px] uppercase mb-1 font-semibold drop-shadow-lg placeholder:text-center text-lg rounded-lg w-full lg:w-[600px] md:w-[550px] placeholder:italic focus:border-dashed focus:border-blue-400 px-2 placeholder:text-lg placeholder:font-bold text-gray-800"
+		class="h-[50px] bg-gray-200 uppercase mb-1 font-semibold drop-shadow-lg placeholder:text-center text-lg rounded-lg w-full lg:w-[600px] md:w-[550px] placeholder:italic focus:border-dashed focus:border-blue-400 px-2 placeholder:text-lg placeholder:font-bold text-gray-800"
 	/>
 	<button
 		type="submit"

@@ -11,11 +11,11 @@
 	disabled={question.seen}
 	class:hover:bg-blue-900={!question.seen}
 	on:click={() => dispatch('revealQuestion', question)}
-	class="h-[90px] text-yellow-500 rounded-sm mb-1 flex w-full text-xl md:text-2xl lg:text-3xl font-extrabold justify-center items-center bg-blue-800"
+	class="h-[90px] shadow-md text-yellow-500 rounded-sm mb-1 flex w-full text-2xl md:text-3xl lg:text-4xl font-extrabold justify-center items-center bg-gray-900"
 >
 	{#if question.seen}
 		<p />
 	{:else}
-		<p class="">${question.value}</p>
+		<p class="">{question.value}</p>
 	{/if}
 </button>
