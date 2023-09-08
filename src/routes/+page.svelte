@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Pontus</title>
+	<title>Quiz Riot</title>
 </svelte:head>
 
 <div class="flex-col bg-gray-300 items-center flex justify-center w-full h-screen">
