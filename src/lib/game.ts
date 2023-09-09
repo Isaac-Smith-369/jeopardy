@@ -6,7 +6,7 @@ import { jaccardSimilarity, tokenize } from "./utils"
 const _gameState = () => {
     // Initialize game state
     const {set, update, subscribe} = writable<GameState>({
-        round: null,
+        quiz: null,
         currentState: "Start",
         currentQuestion: null,
         playerScore: 0,
@@ -46,17 +46,17 @@ const _gameState = () => {
         }),
         markQuestionAsSeen: () => update((state) => {
             // Mark current question as seen
-            state.round?.questions.flat().forEach((q) => {
+            state.quiz?.questions.flat().forEach((q) => {
                 if (q.id == state.currentQuestion?.id) {q.seen = true}
             })
 
             // Decrement Question Count
-            if (state.round?.question_count) {
-                state.round.question_count -= 1;
+            if (state.quiz?.question_count) {
+                state.quiz.question_count -= 1;
             }
 
             // Game over if no more questions
-            if (state.round?.question_count === 0) {
+            if (state.quiz?.question_count === 0) {
                 // state.playerScore = 0;
                 state.currentState = "GameOver";
             }

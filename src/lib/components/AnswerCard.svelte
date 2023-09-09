@@ -17,7 +17,7 @@
 {#if $gameState.currentQuestion}
 	<div
 		transition:scale={{ delay: 200, duration: 200, easing: sineOut }}
-		class="lg:w-[60%] w-[95%] flex items-center p-2 flex-col justify-center rounded-md text-center absolute h-[80%] bg-gray-900"
+		class="lg:w-[60%] md:w-[95%] w-full flex items-center p-2 flex-col justify-center rounded-md text-center absolute h-full md:h-[80%] bg-gray-900"
 	>
 		{#if $gameState.attemptedQuestion}
 			<button

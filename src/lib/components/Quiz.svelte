@@ -1,29 +1,29 @@
 <script lang="ts">
 	import { gameState } from '$lib/game';
-	import type { Jeopardy } from '$lib/types';
+	import type { Quiz } from '$lib/types';
 	import { onMount } from 'svelte';
 	import AnswerCard from './AnswerCard.svelte';
 	import GameBoard from './GameBoard.svelte';
 	import ScoreBoard from './ScoreBoard.svelte';
 	import Loading from './Loading.svelte';
 
-	const get_jeopardy = async (): Promise<Jeopardy> => {
+	const get_quiz = async (): Promise<Quiz> => {
 		const res = await fetch('/');
 		return await res.json();
 	};
 
 	onMount(async () => {
 		try {
-			const jeopardy = await get_jeopardy();
-			$gameState.round = jeopardy;
-			$gameState.currentState = 'Jeopardy';
+			const quiz = await get_quiz();
+			$gameState.quiz = quiz;
+			$gameState.currentState = 'Quiz';
 		} catch (e) {
 			console.log(e);
 		}
 	});
 </script>
 
-{#if $gameState.round?.questions}
+{#if $gameState.quiz?.questions}
 	<AnswerCard />
 	<GameBoard on:revealQuestion={(e) => gameState.revealQuestion(e.detail)} />
 	<ScoreBoard />

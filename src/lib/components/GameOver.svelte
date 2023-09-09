@@ -11,7 +11,7 @@
 		</span>
 	</div>
 	<button
-		on:click={() => ($gameState.currentState = 'Jeopardy')}
+		on:click={() => ($gameState.currentState = 'Quiz')}
 		class="bg-gray-800 border-4 border-gray-900 rounded-lg p-2 text-2xl items-center flex justify-center text-gray-100 font-bold w-[200px] h-[60px] text-center"
 		>Play Again</button
 	>

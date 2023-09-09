@@ -1,12 +1,14 @@
+import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "./$types";
+import { getQuizQuestions } from "$lib/server/quiz";
 
 
 export const GET: RequestHandler = async () => {
-    const res = await fetch("http://0.0.0.0:8000/game")
+    const quiz = await getQuizQuestions(5)
 
-    if (!res.ok) {
-        throw new Error(`A network error occured. Code::${res.status}`)
+    if (!quiz) {
+        throw new Error(`An error occured.`)
     }
 
-    return res
+    return json(quiz)
 }

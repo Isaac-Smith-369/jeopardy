@@ -1,15 +1,13 @@
 <script lang="ts">
 	import Loading from '$lib/components/Loading.svelte';
 	import { gameState } from '$lib/game';
-	import Jeopardy from '$lib/components/Jeopardy.svelte';
 	import GameOver from '$lib/components/GameOver.svelte';
 	import Start from '$lib/components/Start.svelte';
-	import FinalJeopardy from '$lib/components/FinalJeopardy.svelte';
+	import Quiz from '$lib/components/Quiz.svelte';
 
 	const STATES = {
 		Start: Start,
-		Jeopardy: Jeopardy,
-		FinalJeopardy: FinalJeopardy,
+		Quiz: Quiz,
 		GameOver: GameOver,
 		Loading: Loading
 	};

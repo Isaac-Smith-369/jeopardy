@@ -4,7 +4,7 @@
 	import Category from './Category.svelte';
 	import QuestionCard from './QuestionCard.svelte';
 
-	$: questions = $gameState.round?.questions;
+	$: questions = $gameState.quiz?.questions;
 </script>
 
 {#if questions}
