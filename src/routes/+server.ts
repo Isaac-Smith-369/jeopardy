@@ -1,6 +1,6 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "./$types";
-import { getQuizQuestions } from "$lib/server/quiz";
+import { getQuizQuestions } from "$lib/server/queries";
 
 
 export const GET: RequestHandler = async () => {
